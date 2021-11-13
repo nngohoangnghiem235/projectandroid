@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+
+    tools:context=".chitietthongbao">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/back"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:allowUndo="true"
+                android:fontFamily="sans-serif"
+                android:text="Thông Báo"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FF0000"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="50dp"
+                android:background="@drawable/bin"
+                android:textColorHint="@color/black"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="255dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Ưu đãi bạn mới, giảm 50% cho đơn đầu tiên, freeship trong bán kính 10km"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="* Ưu đãi dành riêng cho bạn"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="* 1 Pizza xúc xích"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="* 4 coca lon..."
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="* 1 phần hot wings 3 miếng"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="* 1 Khoai tây chiên."
+            android:textAlignment="viewStart" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btntctb2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/bnt"
+            android:fontFamily="sans-serif"
+            android:text="Pizzahub ngay"
+            android:textColor="@color/white" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:background="@drawable/footer"
+            android:layout_alignParentBottom="true"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nhahangcttb2"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:drawableTop="@drawable/res"
+                android:fontFamily="sans-serif"
+                android:text="Nhà hàng"
+                android:textColor="#000"></Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/donhangcttb2"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:drawableTop="@drawable/donhang"
+                android:fontFamily="sans-serif"
+                android:text="Đơn hàng"
+                android:textColor="#000"></Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:drawableTop="@drawable/notired"
+                android:fontFamily="sans-serif"
+                android:text="Thông báo"
+                android:textColor="#EF0D0D"></Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:id="@+id/tktctb2"
+                android:drawableTop="@drawable/us"
+                android:fontFamily="sans-serif"
+                android:text="Tài Khoản"
+                android:textColor="#000"></Button>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

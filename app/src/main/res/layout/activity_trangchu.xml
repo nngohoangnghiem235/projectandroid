@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtPizza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PizzaHub"
+                    android:textColor="#EF0D0D"
+                    android:textSize="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/tvPz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtPizza"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Mang cả thế giới Pizza về nhà bạn!"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:textStyle="bold"></TextView>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:background="#EF0d0d"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="COMBO 1 NGƯỜI"
+                    android:textSize="17dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:backgroundTint="#EF0D0D"
+                    android:layout_marginLeft="6dp"
+                    android:padding="5dp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+
+                    android:layout_weight="1"></Button>
+                <Button
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="COMBO 1 nhóm"
+                    android:textSize="17dp"
+                    android:padding="5dp"
+                    android:textColor="#EF0D0D"
+                    android:textStyle="bold"
+                    android:layout_weight="1"></Button>
+                <Button
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/colorPrimary1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="COMBO ưu đãi"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:textColor="#EF0D0D"
+                    android:textStyle="bold"
+                    android:layout_weight="1"></Button>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/tvGH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/colorPrimary1"
+                    android:drawableLeft="@drawable/user"
+                    android:text=" Giao hàng đến:"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000"
+                    android:textSize="17dp"
+                    android:textStyle="bold"></TextView>
+
+                <Button
+                    android:id="@+id/thaydoi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="145dp"
+                    android:layout_toRightOf="@+id/tvGH"
+                    android:background="@color/colorPrimary1"
+                    android:drawableRight="@drawable/edit"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Thay đổi"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:textStyle="bold"></Button>
+
+                <TextView
+                    android:id="@+id/tvDC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvGH"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="195/14A Ông Ích Khiêm, Thanh Bình Hải Châu, Đà Nẵng"
+                    android:textColor="#000"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:id="@+id/imgPizza"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+
+                    android:layout_below="@+id/tvDC"
+                    android:src="@drawable/p2"></ImageView>
+
+                <TextView
+                    android:id="@+id/txtTatCa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgPizza"
+                    android:gravity="center"
+                    android:text="TẤT CẢ"
+                    android:textColor="#EF0D0D"
+                    android:textSize="30dp"
+                    android:textStyle="bold"></TextView>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/gachngang"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_margin="10dp"
+                    android:layout_below="@id/txtTatCa"
+                    android:background="@drawable/line"></LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/shadow">
+
+                        <ImageView
+                            android:id="@+id/imgItem1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:padding="20dp"
+                            android:background="@drawable/radiusimg"
+                            android:src="@drawable/cb111"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imgItem1"
+                            android:layout_margin="5dp"
+                            android:text="COMBO PIZZAHUB A 145.000đ"
+                            android:textSize="20dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:drawableLeft="@drawable/cc"
+                            android:text="1 Pizza thập cẩm"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:drawableLeft="@drawable/cc"
+                            android:text="1 Pizza thập cẩm"></TextView>
+
+                        <Button
+                            android:layout_width="135dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Tùy chỉnh"
+                            android:layout_margin="5dp"
+                            android:textColor="#000"
+                            android:textSize="20dp"
+                            android:background="@drawable/button"
+                            android:textStyle="bold"></Button>
+                        <Button
+                            android:layout_width="135dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:id="@+id/dathang"
+                            android:padding="5dp"
+                            android:text="đặt hàng"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="#fff"
+                            android:background="@drawable/button"
+                            android:backgroundTint="#FF0000"
+                            android:textSize="20dp"
+                            android:textStyle="bold"></Button>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/shadow">
+
+                        <ImageView
+                            android:id="@+id/imgItem2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/radiusimg"
+                            android:layout_margin="5dp"
+                            android:padding="20dp"
+                            android:src="@drawable/cb111"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imgItem1"
+                            android:layout_margin="5dp"
+                            android:text="COMBO PIZZAHUB A 145.000đ"
+                            android:textSize="20dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20dp"
+                            android:drawableLeft="@drawable/cc"
+                            android:text="1 Pizza thập cẩm"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:drawableLeft="@drawable/cc"
+                            android:text="1 Pizza thập cẩm"></TextView>
+                        <Button
+                            android:layout_width="135dp"
+                            android:background="@drawable/button"
+                            android:layout_margin="5dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Tùy chỉnh"
+                            android:textColor="#000"
+                            android:textSize="20dp"
+                            android:textStyle="bold"></Button>
+                        <Button
+                            android:layout_width="135dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:id="@+id/dathang1"
+                            android:text="đặt hàng"
+                            android:background="@drawable/button"
+                            android:textColor="#fff"
+                            android:layout_marginBottom="5dp"
+                            android:backgroundTint="#ef0d0d"
+                            android:textSize="20dp"
+                            android:textStyle="bold"></Button>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/shadow">
+
+                        <ImageView
+                            android:id="@+id/imgItem3"
+                            android:layout_width="wrap_content"
+                            android:background="@drawable/radiusimg"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:padding="20dp"
+                            android:src="@drawable/cb111"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imgItem1"
+                            android:layout_margin="5dp"
+                            android:text="COMBO PIZZAHUB A 145.000đ"
+                            android:textSize="20dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:drawableLeft="@drawable/cc"
+                            android:text="1 Pizza thập cẩm"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:drawableLeft="@drawable/cc"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:text="1 Pizza thập cẩm"></TextView>
+
+                        <Button
+                            android:layout_width="135dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:background="@drawable/button"
+                            android:text="Tùy chỉnh"
+                            android:textColor="#000"
+                            android:textSize="20dp"
+                            android:layout_margin="5dp"
+                            android:textStyle="bold"></Button>
+
+                        <Button
+                            android:layout_width="135dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="#ef0d0d"
+                            android:gravity="center"
+                            android:background="@drawable/button"
+                            android:padding="5dp"
+                            android:text="đặt hàng"
+                            android:textColor="#fff"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="20dp"
+                            android:textStyle="bold"></Button>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/shadow">
+
+                        <ImageView
+                            android:id="@+id/imgItem4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:padding="20dp"
+                            android:background="@drawable/radiusimg"
+                            android:src="@drawable/cb111"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imgItem1"
+                            android:layout_margin="5dp"
+                            android:text="COMBO PIZZAHUB A 145.000đ"
+                            android:textSize="20dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:drawableLeft="@drawable/cc"
+                            android:text="1 Pizza thập cẩm"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:drawableLeft="@drawable/cc"
+                            android:text="1 Pizza thập cẩm"></TextView>
+
+                        <Button
+                            android:layout_width="135dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Tùy chỉnh"
+                            android:background="@drawable/button"
+                            android:layout_margin="5dp"
+                            android:textColor="#000"
+                            android:textSize="20dp"
+                            android:textStyle="bold"></Button>
+
+                        <Button
+                            android:layout_width="135dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="#ef0d0d"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="đặt hàng"
+                            android:textColor="#fff"
+                            android:textSize="20dp"
+                            android:background="@drawable/button"
+                            android:textStyle="bold"></Button>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:background="@drawable/footer"
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:text="Nhà hàng"
+                    android:textColor="#000"
+                    android:drawableTop="@drawable/resred"
+                    ></Button>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:text="Đơn hàng"
+                    android:id="@+id/dh"
+                    android:textColor="#000"
+                    android:drawableTop="@drawable/donhang"></Button>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thongbao"
+                    android:background="#fff"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:drawableTop="@drawable/noti"
+                    android:text="Thông báo"></Button>
+
+                <Button
+                    android:background="#fff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:id="@+id/tk"
+                    android:drawableTop="@drawable/us"
+                    android:text="Tài Khoản"></Button>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
