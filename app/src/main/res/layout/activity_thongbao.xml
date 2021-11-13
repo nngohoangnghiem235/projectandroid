@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".thongbao"
+    android:background="#FFFF">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="45dp"
+                android:id="@+id/back"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/back"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:allowUndo="true"
+                android:fontFamily="sans-serif"
+                android:text="Thông Báo"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FF0000"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btndelete"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="50dp"
+                android:background="@drawable/bin"
+                android:textColorHint="@color/black"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"/>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/shape">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Tặng ưu đãi freeship cho đơn hàng..."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="* Ưu đãi dành riêng cho bạn"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="* 1 Pizza rau củ"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="* 4 coca ly..."
+            android:textAlignment="viewStart" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtxem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="sans-serif"
+                android:text="XEM THÊM..."
+                android:textAlignment="viewStart" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/shape">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Ưu đãi bạn mới giảm 50% cho đơn đầu..."
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="* Ưu đãi dành riêng cho bạn"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="* 1 Pizza xúc xích"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="* 4 coca lon..."
+            android:textAlignment="viewStart" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtxem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="sans-serif"
+                android:text="XEM THÊM..."
+                android:textAlignment="viewStart" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/shape">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Ở nhà an toàn, cần gì cứ đặt PizzaHub..."
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="* Nhập mã pizzaHub1 để được discount 15%"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="* Số lượng có hạn, chỉ 100 đơn đặt hàng đầu"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="* FREESHIP trong bán kính 15km"
+            android:textAlignment="viewStart" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtxem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="sans-serif"
+                android:text="XEM THÊM..."
+                android:textAlignment="viewStart" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:background="@drawable/footer"
+            android:layout_alignParentBottom="true"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:drawableTop="@drawable/res"
+                android:fontFamily="sans-serif"
+                android:text="Nhà hàng"
+                android:id="@+id/nhahangtb"
+                android:textColor="#000"></Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:drawableTop="@drawable/donhang"
+                android:fontFamily="sans-serif"
+                android:text="Đơn hàng"
+                android:id="@+id/donhangtb"
+                android:textColor="#000"></Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:drawableTop="@drawable/notired"
+                android:fontFamily="sans-serif"
+                android:text="Thông báo"
+                android:textColor="#EF0D0D"></Button>
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:id="@+id/tktb"
+                android:drawableTop="@drawable/us"
+                android:fontFamily="sans-serif"
+                android:text="Tài Khoản"
+                android:textColor="#000"></Button>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
