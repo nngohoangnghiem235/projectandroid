@@ -3,122 +3,127 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:background="@color/colorPrimary1">
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="#F4F4F4"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/back"
+            android:padding="0dp"></Button>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="QUY TRÌNH ĐẶT HÀNG"
+            android:gravity="center"
+            android:textColor="#EF0D0D"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hinhtron"
+            android:padding="2dp"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary1"></TextView>
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="4dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/line"></LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hinhtron"
+            android:padding="2dp"
+            android:text="2"
+            android:textAlignment="center"
+            android:textColor="#fff"></TextView>
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="4dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/line"></LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hinhtron"
+            android:padding="2dp"
+            android:text="3"
+            android:textAlignment="center"
+            android:textColor="#fff"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="25dp"
+            android:text="Giao hàng"
+            android:textColor="#000"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Thanh toán"
+            android:textColor="#000"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="3dp"
+            android:text="Hoàn thành"
+            android:textColor="#000"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#F4F4F4"
-                android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/btnBack"
-                    android:layout_width="45dp"
-                    android:layout_height="40dp"
-                    android:layout_margin="5dp"
-                    android:background="@drawable/back"
-                    android:padding="0dp"></Button>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="QUY TRÌNH ĐẶT HÀNG"
-                    android:gravity="center"
-                    android:textColor="#EF0D0D"
-                    android:textSize="20dp"
-                    android:textStyle="bold"></TextView>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:gravity="center_horizontal"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/hinhtron"
-                    android:padding="2dp"
-                    android:text="1"
-                    android:textAlignment="center"
-                    android:textColor="@color/colorPrimary1"></TextView>
-
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="4dp"
-                    android:layout_marginLeft="2dp"
-                    android:layout_marginTop="9dp"
-                    android:layout_marginRight="2dp"
-                    android:background="@drawable/line"></LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/hinhtron"
-                    android:padding="2dp"
-                    android:text="2"
-                    android:textAlignment="center"
-                    android:textColor="#fff"></TextView>
-
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="4dp"
-                    android:layout_marginLeft="2dp"
-                    android:layout_marginTop="9dp"
-                    android:layout_marginRight="2dp"
-                    android:background="@drawable/line"></LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/hinhtron"
-                    android:padding="2dp"
-                    android:text="3"
-                    android:textAlignment="center"
-                    android:textColor="#fff"></TextView>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginRight="25dp"
-                    android:text="Giao hàng"
-                    android:textColor="#000"
-                    android:textStyle="bold"></TextView>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:text="Thanh toán"
-                    android:textColor="#000"
-                    android:textStyle="bold"></TextView>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="3dp"
-                    android:text="Hoàn thành"
-                    android:textColor="#000"
-                    android:textStyle="bold"></TextView>
-            </LinearLayout>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -311,7 +316,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/txtEm"
-                        android:layout_margin="2dp"
                         android:layout_marginStart="2dp"
                         android:layout_marginTop="2dp"
                         android:layout_marginEnd="2dp"
@@ -628,47 +632,57 @@
                         android:layout_marginTop="10dp"
                         >
                     </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="TỔNG THANH TOÁN"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="10dp"
-                            android:textColor="#000"
-                            android:textSize="25dp"
-                            android:textStyle="bold"></TextView>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="168.000đ"
-                            android:textAlignment="textEnd"
-                            android:textColor="#EF0D0D"
-                            android:textSize="23dp"
-                            android:textStyle="bold"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="10dp"></TextView>
-                    </LinearLayout>
-                    <Button
-                        android:id="@+id/btnQLTD"
-                        android:layout_width="match_parent"
-                        android:layout_height="45dp"
-                        android:text="QUAY LẠI THỰC ĐƠN"
-                        android:layout_marginTop="15dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:padding="5dp"
-                        android:textStyle="bold"
-                        android:textSize="18dp"
-                        android:textColor="#fff"
-                        android:background="@drawable/button"
-                        android:backgroundTint="#EF0D0D">
-                    </Button>
+
                 </LinearLayout>
             </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
+    <RelativeLayout
+        android:layout_below="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/TTT"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TỔNG THANH TOÁN"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textStyle="bold"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="168.000đ"
+            android:textAlignment="textEnd"
+            android:textColor="#EF0D0D"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"></TextView>
+    </LinearLayout>
+    <Button
+        android:layout_below="@+id/TTT"
+        android:id="@+id/btnQuayLaiNhaHang"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="QUAY LẠI Nhà hàng"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:background="@drawable/button"
+        android:backgroundTint="#EF0D0D">
+    </Button>
+    </RelativeLayout>
 </LinearLayout>

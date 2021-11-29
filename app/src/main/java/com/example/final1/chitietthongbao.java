@@ -8,47 +8,39 @@ import android.view.View;
 import android.widget.Button;
 
 public class chitietthongbao extends AppCompatActivity {
-    Button btnback,nhahagtctb, donhagtctb, canhantctb, tctb;
+    Button btnBack,btnTrangChu, btnDonHang, btnTaiKhoan;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_chitietthongbao);
-        btnback = (Button) findViewById(R.id.back);
-        nhahagtctb = (Button) findViewById(R.id.nhahangcttb);
-        donhagtctb = (Button) findViewById(R.id.donhangcttb);
-        canhantctb = (Button) findViewById(R.id.tktctb);
-        tctb = (Button) findViewById(R.id.btntctb);
+        btnBack = (Button) findViewById(R.id.btnBack);
+        btnTrangChu = (Button) findViewById(R.id.btnTrangChu);
+        btnDonHang = (Button) findViewById(R.id.btnDonHang);
+        btnTaiKhoan = (Button) findViewById(R.id.btnTaiKhoan);
 
-        tctb.setOnClickListener(new View.OnClickListener() {
+        btnTrangChu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(chitietthongbao.this, trangchu.class);
                 startActivity(intent);
             }
         });
-        nhahagtctb.setOnClickListener(new View.OnClickListener() {
+        btnDonHang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(chitietthongbao.this, trangchu.class);
+                Intent intent = new Intent(chitietthongbao.this, ActivityDonHangFragment.class);
                 startActivity(intent);
             }
         });
-        donhagtctb.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(chitietthongbao.this, trangchu.class);
-                startActivity(intent);
-            }
-        });
-        canhantctb.setOnClickListener(new View.OnClickListener() {
+        btnTaiKhoan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(chitietthongbao.this, canhan.class);
                 startActivity(intent);
             }
         });
-        btnback.setOnClickListener(new View.OnClickListener() {
+        btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();

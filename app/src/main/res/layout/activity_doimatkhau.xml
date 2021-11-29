@@ -79,6 +79,7 @@
             android:background="@drawable/shapeedt"
             android:backgroundTint="#C1C0C0"/>
         <Button
+            android:id="@+id/btnDoiMatKhau"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="Cập nhật mật khẩu"
@@ -89,7 +90,7 @@
             android:background="@drawable/shapebtn"
             android:backgroundTint="#D80D0D"/>
         <Button
-            android:id="@+id/huydoimatkhau"
+            android:id="@+id/btnHuy"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="hủy"

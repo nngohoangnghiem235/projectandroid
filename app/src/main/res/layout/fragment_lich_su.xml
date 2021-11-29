@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LichSuFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/item1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                tools:ignore="MissingConstraints"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+
+                android:background="@drawable/border_radius"
+                >
+                <ImageView
+                    android:padding="1dp"
+                    android:background="@drawable/radius_item"
+                    android:id="@+id/img"
+                    android:layout_margin="5dp"
+                    android:layout_width="98dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/food03"></ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:id="@+id/txt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PizzaHub"
+                        android:textColor="#ef0d0d"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+
+                        android:layout_marginLeft="5dp"
+
+                        >
+                    </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ngày đặt: 05/11/2021"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="5dp"
+                        >
+                    </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Thanh toán: 100,000đ"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="5dp">
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:layout_constraintTop_toBottomOf="@id/item1"
+                tools:ignore="MissingConstraints"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:background="@drawable/radius_item"
+                >
+                <ImageView
+                    android:padding="1dp"
+                    android:layout_margin="5dp"
+                    android:id="@+id/img1"
+                    android:layout_width="98dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/food03"
+                    android:background="@drawable/radius_item"></ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:id="@+id/txt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PizzaHub"
+                        android:textColor="#ef0d0d"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+
+                        android:layout_marginLeft="5dp"
+
+                        >
+                    </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ngày đặt: 05/11/2021"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="5dp"
+                        >
+                    </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Thanh toán: 100,000đ"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="5dp">
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

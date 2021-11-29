@@ -8,14 +8,14 @@ import android.view.View;
 import android.widget.Button;
 
 public class finaldonhang extends AppCompatActivity {
-    Button btnBack,btnQL;
+    Button btnBack,btnQuayLaiNhaHang;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_finaldonhang);
         btnBack = (Button) findViewById(R.id.btnBack);
-        btnQL = (Button) findViewById(R.id.btnQLTD);
+        btnQuayLaiNhaHang = (Button) findViewById(R.id.btnQuayLaiNhaHang);
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -24,7 +24,7 @@ public class finaldonhang extends AppCompatActivity {
             }
         });
 
-        btnQL.setOnClickListener(new View.OnClickListener() {
+        btnQuayLaiNhaHang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(finaldonhang.this,trangchu.class);

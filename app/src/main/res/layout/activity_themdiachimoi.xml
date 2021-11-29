@@ -19,13 +19,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp">
-
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:fontFamily="sans-serif"
+                    android:layout_marginBottom="10dp"
                     android:text="THÊM ĐỊA CHỈ MỚI"
                     android:textColor="#D80D0D"
                     android:textSize="35sp"
@@ -38,7 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="1sp"
             android:background="@color/black"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="35dp"
             />
 
     </LinearLayout>
@@ -121,6 +120,7 @@
             android:background="@drawable/shapeedt"
             android:backgroundTint="#C1C0C0"/>
         <Button
+            android:id="@+id/btnThemDiaChi"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="Thêm địa chỉ"
@@ -132,7 +132,7 @@
             android:background="@drawable/shapebtn"
             android:backgroundTint="#D80D0D"/>
         <Button
-            android:id="@+id/huythemdiachi"
+            android:id="@+id/btnHuy"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="hủy"

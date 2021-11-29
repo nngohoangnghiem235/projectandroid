@@ -13,72 +13,68 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class thongbao extends AppCompatActivity {
-    TextView xem;
-    TextView xem1;
-    TextView xem2;
-    Button btn, b, nhahagtb, donhagtb, canhantb;
+    TextView tvChiTiet1,tvChiTiet2,tvChiTiet3;
+    Button btnDelete, btnBack, btnTrangChu, btnDonHang, btnTaiKhoan;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_thongbao);
-        xem = (TextView)findViewById(R.id.txtxem);
-        xem1 = (TextView)findViewById(R.id.txtxem1);
-        xem2 = (TextView)findViewById(R.id.txtxem2);
-        b = (Button) findViewById(R.id.back) ;
-        btn = (Button) findViewById(R.id.btndelete);
-        nhahagtb = (Button) findViewById(R.id.nhahangtb);
-        donhagtb = (Button) findViewById(R.id.donhangtb);
-        canhantb = (Button) findViewById(R.id.tktb);
+        tvChiTiet1 = (TextView)findViewById(R.id.tvChiTiet1);
+        tvChiTiet2 = (TextView)findViewById(R.id.tvChiTiet2);
+        tvChiTiet3 = (TextView)findViewById(R.id.tvChiTiet3);
+        btnBack = (Button) findViewById(R.id.btnBack) ;
+        btnDelete = (Button) findViewById(R.id.btnDelete);
+        btnTrangChu = (Button) findViewById(R.id.btnTrangChu);
+        btnDonHang = (Button) findViewById(R.id.btnDonHang);
+        btnTaiKhoan = (Button) findViewById(R.id.btnTaiKhoan);
 
-        nhahagtb.setOnClickListener(new View.OnClickListener() {
+        btnTrangChu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(thongbao.this, trangchu.class);
                 startActivity(intent);
             }
         });
-        donhagtb.setOnClickListener(new View.OnClickListener() {
+        btnDonHang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(thongbao.this, donhangpr.class);
+                Intent intent = new Intent(thongbao.this, ActivityDonHangFragment.class);
                 startActivity(intent);
             }
         });
-        canhantb.setOnClickListener(new View.OnClickListener() {
+        btnTaiKhoan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(thongbao.this, canhan.class);
                 startActivity(intent);
             }
         });
-        b.setOnClickListener(new View.OnClickListener() {
+        btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
             }
         });
-        xem.setOnClickListener(new View.OnClickListener() {
+        tvChiTiet1.setOnClickListener(new View.OnClickListener() {
             @Override
 
             public void onClick(View view) {
-                Intent intenttxtxem = new Intent(thongbao.this, chitietthongbao.class);
-                startActivity(intenttxtxem);
+                Intent intent = new Intent(thongbao.this, chitietthongbao.class);
+                startActivity(intent);
             }
         });
-        xem1.setOnClickListener(new View.OnClickListener() {
+        tvChiTiet2.setOnClickListener(new View.OnClickListener() {
             @Override
 
             public void onClick(View view) {
-                Intent intenttxtxem1 = new Intent(thongbao.this, chitietthongbao2.class);
-                startActivity(intenttxtxem1);
+                Intent intent = new Intent(thongbao.this, chitietthongbao2.class);
+                startActivity(intent);
             }
         });
-        btn.setOnClickListener(new View.OnClickListener() {
+        btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
                 LayoutInflater li=getLayoutInflater();
                 View layout=li.inflate(R.layout.activity_toast,(ViewGroup) findViewById(R.id.toast));
                 Toast toast = new Toast(getApplicationContext());

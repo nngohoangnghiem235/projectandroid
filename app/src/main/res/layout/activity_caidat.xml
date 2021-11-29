@@ -70,10 +70,10 @@
                         android:textSize="30sp" />
 
                     <RadioButton
+                        android:id="@+id/rdNTB"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        />
+                        android:layout_alignParentRight="true" />
                 </RelativeLayout>
 
             </LinearLayout>
@@ -100,10 +100,10 @@
                     android:textSize="30sp" />
 
                 <RadioButton
+                    android:id="@+id/rdNN"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    />
+                    android:layout_alignParentRight="true" />
             </RelativeLayout>
 
         </LinearLayout>
@@ -128,10 +128,10 @@
                     android:textSize="30sp" />
 
                 <RadioButton
+                    android:id="@+id/rdTG"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    />
+                    android:layout_alignParentRight="true" />
             </RelativeLayout>
 
         </LinearLayout>

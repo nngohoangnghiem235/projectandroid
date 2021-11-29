@@ -16,8 +16,8 @@
             android:layout_height="match_parent">
 
             <Button
+                android:id="@+id/btnBack"
                 android:layout_width="45dp"
-                android:id="@+id/back"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:background="@drawable/back"
@@ -38,7 +38,7 @@
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/btndelete"
+                android:id="@+id/btnDelete"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -53,158 +53,192 @@
         android:layout_height="1dp"
         android:layout_marginTop="5dp"
         android:background="@color/black"/>
-    <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="20dp"
-        android:orientation="vertical"
-        android:background="@drawable/shape">
-
-        <TextView
-            android:layout_width="wrap_content"
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:text="Tặng ưu đãi freeship cho đơn hàng..."
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:text="* Ưu đãi dành riêng cho bạn"
-            android:textAlignment="viewStart" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:text="* 1 Pizza rau củ"
-            android:textAlignment="viewStart" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:text="* 4 coca ly..."
-            android:textAlignment="viewStart" />
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/txtxem"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:fontFamily="sans-serif"
-                android:text="XEM THÊM..."
-                android:textAlignment="viewStart" />
-        </RelativeLayout>
-    </LinearLayout>
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:background="@drawable/shape">
 
-    <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="15dp"
-        android:orientation="vertical"
-        android:background="@drawable/shape">
+                <TextView
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:text="Ưu đãi bạn mới giảm 50% cho đơn đầu..."
-            android:textAlignment="viewStart"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:fontFamily="sans-serif"
+                    android:text="Tặng ưu đãi freeship cho đơn hàng..."
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="* Ưu đãi dành riêng cho bạn"
+                    android:textAlignment="viewStart" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:text="* Ưu đãi dành riêng cho bạn"
-            android:textAlignment="viewStart" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="* 1 Pizza rau củ"
+                    android:textAlignment="viewStart" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:text="* 1 Pizza xúc xích"
-            android:textAlignment="viewStart" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="* 4 coca ly..."
+                    android:textAlignment="viewStart" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:text="* 4 coca lon..."
-            android:textAlignment="viewStart" />
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tvChiTiet1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Chi tiết"
+                        android:textAlignment="viewStart"
+                        android:textColor="#000"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/txtxem1"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:fontFamily="sans-serif"
-                android:text="XEM THÊM..."
-                android:textAlignment="viewStart" />
-        </RelativeLayout>
-    </LinearLayout>
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:background="@drawable/shape">
 
-    <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="15dp"
-        android:orientation="vertical"
-        android:background="@drawable/shape">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Ưu đãi bạn mới giảm 50% cho đơn đầu..."
+                    android:textAlignment="viewStart"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:text="Ở nhà an toàn, cần gì cứ đặt PizzaHub..."
-            android:textAlignment="viewStart"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="* Ưu đãi dành riêng cho bạn"
+                    android:textAlignment="viewStart" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:text="* Nhập mã pizzaHub1 để được discount 15%"
-            android:textAlignment="viewStart" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="* 1 Pizza xúc xích"
+                    android:textAlignment="viewStart" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:text="* Số lượng có hạn, chỉ 100 đơn đặt hàng đầu"
-            android:textAlignment="viewStart" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="* 4 coca lon..."
+                    android:textAlignment="viewStart" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:text="* FREESHIP trong bán kính 15km"
-            android:textAlignment="viewStart" />
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tvChiTiet2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="sans-serif"
+                        android:text="Chi tiết"
+                        android:textAlignment="viewStart"
+                        android:textColor="#000"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/txtxem2"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:fontFamily="sans-serif"
-                android:text="XEM THÊM..."
-                android:textAlignment="viewStart" />
-        </RelativeLayout>
-    </LinearLayout>
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:background="@drawable/shape">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Ở nhà an toàn, cần gì cứ đặt PizzaHub..."
+                    android:textAlignment="viewStart"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="* Nhập mã pizzaHub1 để được discount 15%"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="* Số lượng có hạn, chỉ 100 đơn đặt hàng đầu"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="* FREESHIP trong bán kính 15km"
+                    android:textAlignment="viewStart" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvChiTiet3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="sans-serif"
+                        android:text="Chi tiết"
+                        android:textAlignment="viewStart"
+                        android:textColor="#000"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -225,7 +259,7 @@
                 android:drawableTop="@drawable/res"
                 android:fontFamily="sans-serif"
                 android:text="Nhà hàng"
-                android:id="@+id/nhahangtb"
+                android:id="@+id/btnTrangChu"
                 android:textColor="#000"></Button>
             <Button
                 android:layout_width="wrap_content"
@@ -235,7 +269,7 @@
                 android:drawableTop="@drawable/donhang"
                 android:fontFamily="sans-serif"
                 android:text="Đơn hàng"
-                android:id="@+id/donhangtb"
+                android:id="@+id/btnDonHang"
                 android:textColor="#000"></Button>
 
             <Button
@@ -255,11 +289,13 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#fff"
-                android:id="@+id/tktb"
+                android:id="@+id/btnTaiKhoan"
                 android:drawableTop="@drawable/us"
                 android:fontFamily="sans-serif"
                 android:text="Tài Khoản"
                 android:textColor="#000"></Button>
         </LinearLayout>
+
+
     </RelativeLayout>
 </LinearLayout>

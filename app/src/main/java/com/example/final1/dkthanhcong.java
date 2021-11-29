@@ -8,18 +8,17 @@ import android.view.View;
 import android.widget.Button;
 
 public class dkthanhcong extends AppCompatActivity {
-    Button truycap;
+    Button btnTruyCap;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_dkthanhcong);
-
-        truycap = (Button) findViewById(R.id.button3);
-        truycap.setOnClickListener(new View.OnClickListener() {
+        btnTruyCap = (Button) findViewById(R.id.btnTruyCapNgay);
+        btnTruyCap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(dkthanhcong.this, trangchu.class);
+                Intent intent = new Intent(dkthanhcong.this, dangnhap.class);
                 startActivity(intent);
             }
         });

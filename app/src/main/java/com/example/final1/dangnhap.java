@@ -9,24 +9,24 @@ import android.widget.TextView;
 
 
 public class dangnhap extends AppCompatActivity {
-    Button dnhap1;
-    TextView tvdk;
+    Button btnDangNhap;
+    TextView tvDangKi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_dangnhap);
-        dnhap1 = (Button) findViewById(R.id.dnhap);
-        tvdk = (TextView) findViewById(R.id.tvdangki);
-        dnhap1.setOnClickListener(new View.OnClickListener() {
+        btnDangNhap = (Button) findViewById(R.id.btnDangNhap);
+        tvDangKi = (TextView) findViewById(R.id.tvDangKi);
+        btnDangNhap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(dangnhap.this, trangchu.class);
                 startActivity(intent);
             }
         });
-        tvdk.setOnClickListener(new View.OnClickListener() {
+        tvDangKi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(dangnhap.this, dangki.class);

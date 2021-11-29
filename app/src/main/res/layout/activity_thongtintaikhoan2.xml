@@ -59,7 +59,7 @@
         android:fontFamily="sans-serif">
 
         <TextView
-            android:id="@+id/thongtintaikhoan"
+            android:id="@+id/tvThongTinTaiKhoan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Thông tin tài khoản"
@@ -68,7 +68,7 @@
             android:textSize="25sp"
             android:textColor="@color/black"/>
         <TextView
-            android:id="@+id/doimatkhau"
+            android:id="@+id/tvDoiMatKhau"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Đổi mật khẩu"
@@ -79,7 +79,7 @@
             android:textColor="@color/black"
             android:layout_marginLeft="30dp" />
         <TextView
-            android:id="@+id/capnhatthongtin"
+            android:id="@+id/tvCapNhatThongTin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Cập nhật thông tin"
@@ -91,7 +91,7 @@
             android:layout_marginLeft="30dp" />
 
         <TextView
-            android:id="@+id/diachigiaohang"
+            android:id="@+id/tvDiaChiGiaoHang"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Địa chỉ giao hàng"
@@ -100,7 +100,7 @@
             android:textSize="25sp"
             android:textColor="@color/black"/>
         <TextView
-            android:id="@+id/caidat"
+            android:id="@+id/tvCaiDat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Cài đặt"
@@ -108,7 +108,7 @@
             android:textSize="25sp"
             android:textColor="@color/black"/>
         <TextView
-            android:id="@+id/vechungtoi"
+            android:id="@+id/tvVeChungToi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Về chúng tôi"
@@ -187,7 +187,7 @@
         android:padding="10dp"
         android:fontFamily="sans-serif">
         <TextView
-            android:id="@+id/dangxuat"
+            android:id="@+id/tvDangXuat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Đăng xuất"
@@ -207,6 +207,7 @@
             android:layout_alignParentBottom="true"
             >
             <Button
+                android:id="@+id/btnTrangChu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -216,6 +217,7 @@
                 android:drawableTop="@drawable/res"
                 ></Button>
             <Button
+                android:id="@+id/btnDonHang"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -224,6 +226,7 @@
                 android:textColor="#000"
                 android:drawableTop="@drawable/donhang"></Button>
             <Button
+                android:id="@+id/btnThongBao"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#fff"

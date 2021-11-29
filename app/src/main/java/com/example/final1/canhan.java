@@ -9,54 +9,75 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class canhan extends AppCompatActivity {
-    TextView txtthongtintaikhoan;
-    TextView txtdiachigiaohang;
-    TextView txtcaidat, txtdangxuat;
-    Button btnnhahag;
+    TextView tvThongTinTaiKhoan,tvDiaChiGiaoHang,tvCaiDat,tvDangXuat;
+    Button btnTrangChu,btnDonHang,btnThongBao;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_canhan);
-        txtthongtintaikhoan = (TextView) findViewById(R.id.thongtintaikhoan);
-        txtdiachigiaohang =(TextView) findViewById(R.id.diachigiaohang);
-        btnnhahag=(Button)findViewById(R.id.nhahang);
-        txtcaidat = (TextView) findViewById(R.id.caidat);
-        txtdangxuat=(TextView) findViewById(R.id.dangxuat);
+        tvThongTinTaiKhoan = (TextView) findViewById(R.id.tvThongTinTaiKhoan);
+        tvDiaChiGiaoHang =(TextView) findViewById(R.id.tvDiaChiGiaoHang);
+        btnTrangChu=(Button)findViewById(R.id.btnTrangChu);
+        btnDonHang=(Button)findViewById(R.id.btnDonHang);
+        btnThongBao=(Button)findViewById(R.id.btnThongBao);
+        tvCaiDat = (TextView) findViewById(R.id.tvCaiDat);
+        tvDangXuat=(TextView) findViewById(R.id.tvDangXuat);
 
-        txtdangxuat.setOnClickListener(new View.OnClickListener() {
+        btnTrangChu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(canhan.this, trangchu.class);
+                startActivity(intent);
+            }
+        });
+        btnThongBao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(canhan.this, thongbao.class);
+                startActivity(intent);
+            }
+        });
+        btnDonHang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(canhan.this, ActivityDonHangFragment.class);
+                startActivity(intent);
+            }
+        });
+        tvDangXuat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(canhan.this, dangnhap.class);
                 startActivity(intent);
             }
         });
-        btnnhahag.setOnClickListener(new View.OnClickListener() {
+        tvDangXuat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentnhahang = new Intent(canhan.this, trangchu.class);
-                startActivity(intentnhahang);
+                Intent intent = new Intent(canhan.this, trangchu.class);
+                startActivity(intent);
             }
         });
-        txtthongtintaikhoan.setOnClickListener(new View.OnClickListener() {
+        tvThongTinTaiKhoan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentthongtintaikhoan = new Intent(canhan.this, thongtintaikhoan2.class);
-                startActivity(intentthongtintaikhoan);
+                Intent intent = new Intent(canhan.this, thongtintaikhoan2.class);
+                startActivity(intent);
             }
         });
-        txtdiachigiaohang.setOnClickListener(new View.OnClickListener() {
+        tvDiaChiGiaoHang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentthemdiachimoi = new Intent(canhan.this, themdiachimoi.class);
-                startActivity(intentthemdiachimoi);
+                Intent intent = new Intent(canhan.this, themdiachimoi.class);
+                startActivity(intent);
             }
         });
-        txtcaidat.setOnClickListener(new View.OnClickListener() {
+        tvCaiDat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentcaidat = new Intent(canhan.this, caidat.class);
-                startActivity(intentcaidat);
+                Intent intent = new Intent(canhan.this, caidat.class);
+                startActivity(intent);
             }
         });
     }

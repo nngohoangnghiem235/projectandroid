@@ -29,7 +29,7 @@ public class trangchu extends AppCompatActivity {
         dhpr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(trangchu.this, donhangpr.class);
+                Intent intent = new Intent(trangchu.this, ActivityDonHangFragment.class);
                 startActivity(intent);
             }
         });

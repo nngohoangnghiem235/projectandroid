@@ -22,30 +22,30 @@ public class ThirdActivity extends AppCompatActivity {
         setContentView(R.layout.activity_third);
         Spinner spinner =(Spinner) findViewById(R.id.spinner);
         TextView tv = (TextView) findViewById(R.id.text);
-        Button btnB = (Button) findViewById(R.id.btnBack);
-        Button btnQV = (Button) findViewById(R.id.btnQV);
-        Button btnTiep = (Button) findViewById(R.id.btnTiep);
+        Button btnBack = (Button) findViewById(R.id.btnBack);
+        Button btnQuayVe = (Button) findViewById(R.id.btnQuayVe);
+        Button btnTiepTuc = (Button) findViewById(R.id.btnTiepTuc);
 
         ArrayList<String> arrayThanhToan = new ArrayList<String>();
         arrayThanhToan.add("Thanh toán khi nhận hàng");
         arrayThanhToan.add("Thanh toán trực tuyến");
         arrayThanhToan.add("Thanh toán qua ví điện tử");
 
-        btnTiep.setOnClickListener(new View.OnClickListener() {
+        btnTiepTuc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ThirdActivity.this, finaldonhang.class);
                 startActivity(intent);
             }
         });
-        btnB.setOnClickListener(new View.OnClickListener() {
+        btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ThirdActivity.this, second.class);
                 startActivity(intent);
             }
         });
-        btnQV.setOnClickListener(new View.OnClickListener() {
+        btnQuayVe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ThirdActivity.this, second.class);

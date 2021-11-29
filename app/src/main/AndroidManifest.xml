@@ -10,11 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Final1">
         <activity
-            android:name=".lichsu"
-            android:exported="true" />
-        <activity
-            android:name=".donhangpr"
-            android:exported="true" />
+            android:name=".ActivityDonHangFragment"
+            android:exported="false" />
         <activity
             android:name=".thongtintaikhoan2"
             android:exported="true" />

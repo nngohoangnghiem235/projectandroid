@@ -39,7 +39,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/dnhap"
+        android:id="@+id/btnDangNhap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/bnt"
@@ -56,12 +56,12 @@
         app:layout_constraintVertical_bias="0.598" />
 
     <TextView
-        android:id="@+id/editTextTextPersonName6"
+        android:id="@+id/tvQuenMatKhau"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
         android:inputType="textPersonName"
-        android:text="Bạn chưa có tài khoản?"
+        android:text="Quên mật khẩu?"
         android:textColor="@color/black"
         android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -72,7 +72,7 @@
         app:layout_constraintVertical_bias="0.744" />
 
     <TextView
-        android:id="@+id/tvdangki"
+        android:id="@+id/tvDangKi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"

@@ -8,15 +8,15 @@ import android.view.View;
 import android.widget.Button;
 
 public class second extends AppCompatActivity {
-    Button btn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_second);
-        Button btn = findViewById(R.id.btnBack);
-        Button btnTT = findViewById(R.id.btnTiepTuc);
-        btnTT.setOnClickListener(new View.OnClickListener() {
+        Button btnBack = findViewById(R.id.btnBack);
+        Button btnTiepTuc = findViewById(R.id.btnTiepTuc);
+        btnTiepTuc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(second.this, ThirdActivity.class);
@@ -24,7 +24,7 @@ public class second extends AppCompatActivity {
             }
         });
 
-        btn.setOnClickListener(new View.OnClickListener() {
+        btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(second.this, donhang.class);

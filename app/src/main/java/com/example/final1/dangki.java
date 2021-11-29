@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class dangki extends AppCompatActivity {
 
-    Button bntdk;
+    Button btnDangKi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,8 +18,8 @@ public class dangki extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_dangki);
 
-        bntdk = (Button) findViewById(R.id.bntdangki);
-        bntdk.setOnClickListener(new View.OnClickListener() {
+        btnDangKi = (Button) findViewById(R.id.btnDangKi);
+        btnDangKi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(dangki.this, dkthanhcong.class);

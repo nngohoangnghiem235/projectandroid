@@ -8,30 +8,30 @@ import android.view.View;
 import android.widget.Button;
 
 public class donhang extends AppCompatActivity {
-    Button btn, btnback, thongbao;
+    Button  btnBack,btnTiepTucMuaHang;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_donhang);
-        Button btnN = (Button) findViewById(R.id.btnNext);
-        Button btn = (Button) findViewById(R.id.btnTHTT);
-        Button btnback = (Button) findViewById(R.id.back);
-        btnN.setOnClickListener(new View.OnClickListener() {
+        Button btnTienHanhThanhToan = (Button) findViewById(R.id.btnTienHanhThanhToan);
+        Button btnBack = (Button) findViewById(R.id.btnBack);
+        btnTiepTucMuaHang = (Button) findViewById(R.id.btnTiepTucMuaHang);
+        btnTienHanhThanhToan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(donhang.this, second.class);
                 startActivity(intent);
             }
         });
-        btn.setOnClickListener(new View.OnClickListener() {
+        btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(donhang.this, second.class);
+                Intent intent = new Intent(donhang.this, trangchu.class);
                 startActivity(intent);
             }
         });
-        btnback.setOnClickListener(new View.OnClickListener() {
+        btnTiepTucMuaHang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(donhang.this, trangchu.class);

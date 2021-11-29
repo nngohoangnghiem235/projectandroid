@@ -16,4 +16,6 @@
             <corners android:radius="2dp" />
         </shape>
     </item>
+    <corners
+        android:radius="2dp"></corners>
 </layer-list>

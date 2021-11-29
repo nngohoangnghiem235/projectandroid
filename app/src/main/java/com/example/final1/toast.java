@@ -7,22 +7,22 @@ import android.view.View;
 import android.widget.Button;
 
 public class toast extends AppCompatActivity {
-    Button huy, xoa;
+    Button btnHuy, btnXoa;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_toast);
 
-        huy = (Button) findViewById(R.id.btnhuy);
-        xoa = (Button) findViewById(R.id.btnxoa);
-        huy.setOnClickListener(new View.OnClickListener() {
+        btnHuy = (Button) findViewById(R.id.btnHuy);
+        btnXoa = (Button) findViewById(R.id.btnXoa);
+        btnHuy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
             }
         });
-        xoa.setOnClickListener(new View.OnClickListener() {
+        btnXoa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
