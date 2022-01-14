@@ -25,7 +25,7 @@
         app:layout_constraintVertical_bias="0.286" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName1"
+        android:id="@+id/dk_hoten"
         android:layout_width="323dp"
         android:layout_height="47dp"
         android:background="@drawable/backg"
@@ -42,7 +42,7 @@
         app:layout_constraintVertical_bias="0.375" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/dk_sdt"
         android:layout_width="323dp"
         android:layout_height="47dp"
         android:background="@drawable/backg"
@@ -59,7 +59,7 @@
         app:layout_constraintVertical_bias="0.467" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/dk_tendn"
         android:layout_width="323dp"
         android:layout_height="47dp"
         android:background="@drawable/backg"
@@ -76,7 +76,7 @@
         app:layout_constraintVertical_bias="0.561" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName8"
+        android:id="@+id/dk_mk"
         android:layout_width="323dp"
         android:layout_height="47dp"
         android:background="@drawable/backg"
@@ -92,22 +92,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.654" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="323dp"
-        android:layout_height="47dp"
-        android:background="@drawable/backg"
-        android:ems="10"
-        android:fontFamily="sans-serif"
-        android:hint="    Nhập lại mật khẩu*"
-        android:inputType="textPersonName"
-        android:textSize="14dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.747" />
 
     <Button
         android:id="@+id/bntdangki"

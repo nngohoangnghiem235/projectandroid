@@ -4,25 +4,33 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 public class canhan extends AppCompatActivity {
     TextView txtthongtintaikhoan;
     TextView txtdiachigiaohang;
     TextView txtcaidat, txtdangxuat;
     Button btnnhahag;
+
+    ArrayList<taikhoanuser> arrayuser;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_canhan);
+
+
         txtthongtintaikhoan = (TextView) findViewById(R.id.thongtintaikhoan);
         txtdiachigiaohang =(TextView) findViewById(R.id.diachigiaohang);
         btnnhahag=(Button)findViewById(R.id.nhahang);
         txtcaidat = (TextView) findViewById(R.id.caidat);
         txtdangxuat=(TextView) findViewById(R.id.dangxuat);
+
 
         txtdangxuat.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,5 +67,8 @@ public class canhan extends AppCompatActivity {
                 startActivity(intentcaidat);
             }
         });
+
     }
+
+
 }
