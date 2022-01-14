@@ -16,7 +16,8 @@ public class dangnhap extends AppCompatActivity {
     TextView tvdk;
     EditText taikhoan,matkhau;
     Database database;
-    String tk,mk;
+    public static String mk;
+    public static String tk;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

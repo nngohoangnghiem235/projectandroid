@@ -19,7 +19,7 @@ public class dkthanhcong extends AppCompatActivity {
         truycap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(dkthanhcong.this, trangchu.class);
+                Intent intent = new Intent(dkthanhcong.this, dangnhap.class);
                 startActivity(intent);
             }
         });

@@ -106,7 +106,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
-            android:hint="ngày sinh"
+            android:hint="Giới tính"
             android:id="@+id/gioitinh"
             android:fontFamily="sans-serif"
             android:background="@drawable/shapeedt"

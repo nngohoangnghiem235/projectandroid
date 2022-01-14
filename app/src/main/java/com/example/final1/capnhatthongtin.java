@@ -17,7 +17,7 @@ public class capnhatthongtin extends AppCompatActivity {
     TextView nameuser;
     EditText edthovaten, edtemail, edtngaysinh, GioiTinh;
     Database database;
-    String ten, ngaysinh, Email, Gioitinh;
+    String ten, ngaysinh, Email, gioitinh;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,19 +39,20 @@ public class capnhatthongtin extends AppCompatActivity {
         edtemail = (EditText) findViewById(R.id.email);
         edtngaysinh = (EditText) findViewById(R.id.dob);
         GioiTinh = (EditText) findViewById(R.id.gioitinh);
-        Cursor datauser = database.GetData("select * from thongtinuser2");
+        Cursor datauser = database.GetData("select * from thongtinuser2 where taikhoanuser = '"+dangnhap.tk+"'");
         while (datauser.moveToNext()) {
             ten = datauser.getString(3);
             ngaysinh = datauser.getString(4);
             Email = datauser.getString(5);
-            Gioitinh = datauser.getString(6);
+            gioitinh = datauser.getString(6);
         }
 
         edthovaten.setText(ten);
         edtngaysinh.setText(ngaysinh);
         edtemail.setText(Email);
+        GioiTinh.setText(gioitinh);
 
-        // cái đs là con trỏ nó duyệt data ra
+
         btnhuycapnhatthongtin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -68,8 +69,8 @@ public class capnhatthongtin extends AppCompatActivity {
                 String gioitinh = GioiTinh.getText().toString();
 
 //            database.QuerData("INSERT into thongtinuser2 (hoten,ngaythangnamsinh,email,gioitinh) VALUES('"+hoten+"','"+email+"','"+tuoi+"','"+gioitinh+"')");
-//            database.QuerData("UPDATE thongtinuser2 SET hoten ='"+hoten+"',ngaythangnamsinh = '"+tuoi+"',email = '"+email+"' where Id = '"+id+"'");
-                Toast.makeText(capnhatthongtin.this, "Đã thêm", Toast.LENGTH_SHORT).show();
+           database.QuerData("UPDATE thongtinuser2 SET hoten ='"+hoten+"',ngaythangnamsinh = '"+tuoi+"',email = '"+email+"',gioitinh='"+gioitinh+"' where taikhoanuser = '"+dangnhap.tk+"'");
+                Toast.makeText(capnhatthongtin.this, "Chỉnh sửa thành công", Toast.LENGTH_SHORT).show();
 
             }
         });
