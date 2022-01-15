@@ -13,6 +13,7 @@
         android:layout_height="47dp"
         android:background="@drawable/backg"
         android:ems="10"
+        android:layout_margin="10dp"
         android:fontFamily="sans-serif"
         android:hint="    Tên đăng nhập*"
         android:inputType="textPersonName"
@@ -29,7 +30,7 @@
         android:layout_height="47dp"
         android:background="@drawable/backg"
         android:ems="10"
-
+        android:layout_margin="10dp"
         android:fontFamily="sans-serif"
         android:hint="    Mật khẩu*"
         android:inputType="textPassword"
@@ -64,13 +65,13 @@
         android:inputType="textPersonName"
         android:text="Bạn chưa có tài khoản?"
         android:textColor="@color/black"
-        android:textSize="14dp"
+        android:textSize="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintHorizontal_bias="0.388"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.744" />
+        app:layout_constraintVertical_bias="0.689" />
 
     <TextView
         android:id="@+id/tvdangki"
@@ -80,14 +81,14 @@
         android:fontFamily="sans-serif"
         android:inputType="textPersonName"
         android:text="Đăng kí ngay"
-        android:textColor="@color/black"
-        android:textSize="14dp"
+        android:textColor="#E42259"
+        android:textSize="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.744" />
+        app:layout_constraintVertical_bias="0.773" />
 
     <ImageView
         android:id="@+id/imageView"

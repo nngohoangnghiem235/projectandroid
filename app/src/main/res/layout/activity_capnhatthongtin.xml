@@ -64,7 +64,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="50dp"
             android:text="Cập nhật thông tin"
             android:fontFamily="sans-serif"
             android:textColor="#F80000"
@@ -75,6 +75,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:hint="Họ và tên"
+            android:textSize="23dp"
             android:id="@+id/nameuser"
             android:fontFamily="sans-serif"
             android:background="@drawable/shapeedt"
@@ -84,6 +85,7 @@
             />
         <EditText
             android:layout_width="match_parent"
+            android:textSize="23dp"
             android:layout_height="50dp"
             android:hint="email"
             android:id="@+id/email"
@@ -94,6 +96,7 @@
             android:fontFamily="sans-serif"/>
         <EditText
             android:layout_width="match_parent"
+            android:textSize="23dp"
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
             android:hint="ngày sinh"
@@ -104,6 +107,7 @@
             android:padding="10dp"/>
         <EditText
             android:layout_width="match_parent"
+            android:textSize="23dp"
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
             android:hint="Giới tính"

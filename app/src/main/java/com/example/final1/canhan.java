@@ -20,7 +20,7 @@ public class canhan extends AppCompatActivity {
     TextView txtcaidat, txtdangxuat;
     Button btnnhahag, btndonhang, btnnoti;
     Database database;
-    ImageView youtube;
+    ImageView youtube,facebook,twitter;
     String ten;
 
     ArrayList<taikhoanuser> arrayuser;
@@ -33,7 +33,8 @@ public class canhan extends AppCompatActivity {
         Cursor datauser = database.GetData("select * from thongtinuser2 where taikhoanuser = '"+dangnhap.tk+"'");
         while (datauser.moveToNext()) {
             ten = datauser.getString(3);
-
+        twitter =(ImageView)findViewById(R.id.cn_twitter);
+        facebook =(ImageView)findViewById(R.id.cn_fb);
         txtthongtintaikhoan = (TextView) findViewById(R.id.thongtintaikhoan);
         txtdiachigiaohang =(TextView) findViewById(R.id.diachigiaohang);
         btnnhahag=(Button)findViewById(R.id.nhahang);
@@ -44,7 +45,20 @@ public class canhan extends AppCompatActivity {
         btnnoti = (Button) findViewById(R.id.noti);
         btndonhang = (Button) findViewById(R.id.dh);
         Tentoi.setText(ten);
-
+        twitter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.google.android.twitter");
+                startActivity( launchIntent );
+            }
+        });
+        facebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.google.android.facebook");
+                startActivity( launchIntent );
+            }
+        });
         youtube.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

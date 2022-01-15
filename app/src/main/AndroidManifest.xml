@@ -3,6 +3,8 @@
     package="com.example.final1">
     <queries>
         <package android:name="com.google.android.youtube" />
+        <package android:name="com.google.android.facebook" />
+        <package android:name="com.google.android.twitter" />
         <package android:name="com.example.app" />
     </queries>
     <application
