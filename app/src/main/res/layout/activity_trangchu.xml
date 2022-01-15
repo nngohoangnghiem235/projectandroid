@@ -10,7 +10,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="800dp">
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -154,8 +155,8 @@
 
                 <ImageView
                     android:id="@+id/imgPizza"
-                    android:layout_width="match_parent"
-                    android:layout_height="180dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="130dp"
                     android:layout_below="@+id/tc_diachi"
                     android:src="@drawable/p2"></ImageView>
 
@@ -189,52 +190,57 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
-    <LinearLayout
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/footer"
+        android:layout_marginBottom="0dp"
         >
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#fff"
-            android:text="Nhà hàng"
-            android:textColor="#000"
-            android:drawableTop="@drawable/resred"
-            ></Button>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#fff"
-            android:text="Đơn hàng"
-            android:id="@+id/dh"
-            android:textColor="#000"
-            android:drawableTop="@drawable/donhang"></Button>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/thongbao"
-            android:background="#fff"
-            android:layout_weight="1"
-            android:textColor="#000"
-            android:drawableTop="@drawable/noti"
-            android:text="Thông báo"></Button>
 
-        <Button
-            android:background="#fff"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textColor="#000"
-            android:id="@+id/tk"
-            android:drawableTop="@drawable/us"
-            android:text="Tài Khoản"></Button>
-    </LinearLayout>
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/footer"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:drawableTop="@drawable/resred"
+                android:text="Nhà hàng"
+                android:textColor="#000"></Button>
+
+            <Button
+                android:id="@+id/dh"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:drawableTop="@drawable/donhang"
+                android:text="Đơn hàng"
+                android:textColor="#000"></Button>
+
+            <Button
+                android:id="@+id/thongbao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:drawableTop="@drawable/noti"
+                android:text="Thông báo"
+                android:textColor="#000"></Button>
+
+            <Button
+                android:id="@+id/tk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:drawableTop="@drawable/us"
+                android:text="Tài Khoản"
+                android:textColor="#000"></Button>
+        </LinearLayout>
     </RelativeLayout>
 </LinearLayout>
