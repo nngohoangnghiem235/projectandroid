@@ -13,7 +13,7 @@ public class trangchu extends AppCompatActivity {
         Button dath,dath1, taikhoan, tb, thayd, dhpr, combo2, combo3;
         TextView diachi;
         Database database;
-    String Sten,Ssdt,Sphuongxa,Squanhuyen,Ssonha,Stinhthanh;
+    String Sten,Sphuongxa,Squanhuyen,Ssonha,Stinhthanh;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,10 +41,11 @@ public class trangchu extends AppCompatActivity {
             Squanhuyen = datauser.getString(9);
             Sphuongxa = datauser.getString(10);
             Ssonha = datauser.getString(11);
-            Sten = Ssonha.toString()+" , " + Sphuongxa.toString()+" , " + Squanhuyen.toString()+" , " + Stinhthanh.toString();
-        }
+            Sten = Ssonha+" , " + Sphuongxa+" , " + Squanhuyen+" , " + Stinhthanh;
 
+        }
         diachi.setText(Sten);
+
 
         combo2.setOnClickListener(new View.OnClickListener() {
             @Override
