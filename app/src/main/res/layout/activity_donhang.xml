@@ -198,6 +198,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
                         <Button
+                            android:id="@+id/xoa"
                             android:layout_width="28dp"
                             android:layout_height="28dp"
                             android:background="@drawable/tru"
@@ -206,6 +207,7 @@
                             >
                         </Button>
                         <TextView
+                            android:id="@+id/soluong"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:text="1"
@@ -216,6 +218,7 @@
                             android:textSize="17sp">
                         </TextView>
                         <Button
+                            android:id="@+id/them"
                             android:layout_width="28dp"
                             android:layout_height="28dp"
                             android:background="@drawable/cong"

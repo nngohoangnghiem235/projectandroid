@@ -132,7 +132,7 @@
                     android:textStyle="bold"></Button>
 
                 <TextView
-                    android:id="@+id/tvDC"
+                    android:id="@+id/tc_diachi"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/tvGH"
@@ -140,10 +140,10 @@
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="5dp"
-                    android:textSize="16dp"
                     android:layout_marginBottom="5dp"
                     android:text="195/14A Ông Ích Khiêm, Thanh Bình Hải Châu, Đà Nẵng"
                     android:textColor="#000"
+                    android:textSize="16dp"
                     android:textStyle="bold"></TextView>
 
                 <ImageView
@@ -151,7 +151,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
 
-                    android:layout_below="@+id/tvDC"
+                    android:layout_below="@+id/tc_diachi"
                     android:src="@drawable/p2"></ImageView>
 
                 <TextView

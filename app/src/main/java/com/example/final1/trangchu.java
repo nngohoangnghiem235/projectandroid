@@ -3,20 +3,24 @@ package com.example.final1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class trangchu extends AppCompatActivity {
         Button dath,dath1, taikhoan, tb, thayd, dhpr, combo2, combo3;
-
+        TextView diachi;
+        Database database;
+    String Sten,Ssdt,Sphuongxa,Squanhuyen,Ssonha,Stinhthanh;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_trangchu);
-
+        database = new Database(this, "user.sqlite", null, 1);
         dath = (Button) findViewById(R.id.dathang);
         dath1 =(Button) findViewById(R.id.dathang1);
         taikhoan = (Button) findViewById(R.id.tk);
@@ -26,6 +30,21 @@ public class trangchu extends AppCompatActivity {
         dhpr = (Button) findViewById(R.id.dh);
         combo2 = (Button)findViewById(R.id.cb2);
         combo3 = (Button)findViewById(R.id.cb3);
+        diachi = (TextView)findViewById(R.id.tc_diachi);
+
+
+        Cursor datauser = database.GetData("select * from thongtinuser2 where taikhoanuser = '"+dangnhap.tk+"'");
+        while (datauser.moveToNext()) {
+            Sten = datauser.getString(3);
+            Ssdt = datauser.getString(7);
+            Stinhthanh = datauser.getString(8);
+            Squanhuyen = datauser.getString(9);
+            Sphuongxa = datauser.getString(10);
+            Ssonha = datauser.getString(11);
+            Sten = Ssonha.toString()+" , " + Sphuongxa.toString()+" , " + Squanhuyen.toString()+" , " + Stinhthanh.toString();
+        }
+
+        diachi.setText(Sten);
 
         combo2.setOnClickListener(new View.OnClickListener() {
             @Override
