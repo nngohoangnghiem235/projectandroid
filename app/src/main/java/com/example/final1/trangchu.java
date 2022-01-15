@@ -7,22 +7,27 @@ import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class trangchu extends AppCompatActivity {
-        Button dath,dath1, taikhoan, tb, thayd, dhpr, combo2, combo3;
+        Button  taikhoan, tb, thayd, dhpr, combo2, combo3;
         TextView diachi;
         Database database;
     String Sten,Sphuongxa,Squanhuyen,Ssonha,Stinhthanh;
-
+    ListView list_piz;
+    ArrayList<listpizza> arraylispizza;
+    DataAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_trangchu);
         database = new Database(this, "user.sqlite", null, 1);
-        dath = (Button) findViewById(R.id.dathang);
-        dath1 =(Button) findViewById(R.id.dathang1);
+
+
         taikhoan = (Button) findViewById(R.id.tk);
         tb = (Button) findViewById(R.id.thongbao);
 
@@ -36,7 +41,7 @@ public class trangchu extends AppCompatActivity {
         Cursor datauser = database.GetData("select * from thongtinuser2 where taikhoanuser = '"+dangnhap.tk+"'");
         while (datauser.moveToNext()) {
             Sten = datauser.getString(3);
-            Ssdt = datauser.getString(7);
+
             Stinhthanh = datauser.getString(8);
             Squanhuyen = datauser.getString(9);
             Sphuongxa = datauser.getString(10);
@@ -90,21 +95,17 @@ public class trangchu extends AppCompatActivity {
             }
         });
 
-        dath.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(trangchu.this, donhang.class);
-                startActivity(intent);
-            }
-        });
+        Anhxa();
+        adapter = new DataAdapter(this, R.layout.item_name, arraylispizza);
+        list_piz.setAdapter(adapter);
+    }
+    private void Anhxa(){
+        list_piz = (ListView) findViewById(R.id.list_view);
+        arraylispizza = new ArrayList<>();
 
-        dath1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(trangchu.this, donhang.class);
-                startActivity(intent);
-            }
-        });
-
+        arraylispizza.add(new listpizza("COMBO PIZZAHUB A 145.000đ","1 Pizza thập cẩm","1 Pizza thập cẩm",R.drawable.cb111));
+        arraylispizza.add(new listpizza("COMBO PIZZAHUB A 145.000đ","1 Pizza thập cẩm","1 Pizza thập cẩm",R.drawable.cb111));
+        arraylispizza.add(new listpizza("COMBO PIZZAHUB A 145.000đ","1 Pizza thập cẩm","1 Pizza thập cẩm",R.drawable.cb111));
+        arraylispizza.add(new listpizza("COMBO PIZZAHUB A 145.000đ","1 Pizza thập cẩm","1 Pizza thập cẩm",R.drawable.cb111));
     }
 }
