@@ -664,7 +664,7 @@
                         android:textStyle="bold"
                         android:textSize="18dp"
                         android:textColor="#fff"
-                        android:background="@drawable/button"
+                        android:background="@drawable/botron"
                         android:backgroundTint="#EF0D0D">
                     </Button>
                 </LinearLayout>

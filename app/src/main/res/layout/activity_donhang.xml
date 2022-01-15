@@ -72,7 +72,7 @@
                     android:layout_height="wrap_content"
                     android:text="Thay đổi"
                     android:textColor="#000"
-                    android:background="@drawable/button"
+                    android:background="@drawable/botron"
                     android:layout_marginLeft="150dp"
                     android:textStyle="bold"
                     >
@@ -128,7 +128,7 @@
                 android:textStyle="bold"
                 android:textSize="18dp"
                 android:textColor="#fff"
-                android:background="@drawable/button"
+                android:background="@drawable/botron"
                 android:backgroundTint="#EF0D0D">
             </Button>
             <LinearLayout
@@ -462,7 +462,7 @@
                     android:textStyle="bold"
                     android:textSize="17dp"
                     android:layout_margin="5dp"
-                    android:background="@drawable/button"></Button>
+                    android:background="@drawable/botron"></Button>
                 <Button
                     android:id="@+id/btnNext"
                     android:layout_weight="1"
@@ -474,7 +474,7 @@
                     android:padding="10dp"
                     android:layout_margin="5dp"
                     android:textColor="@color/colorPrimary1"
-                    android:background="@drawable/button"
+                    android:background="@drawable/botron"
                     android:backgroundTint="#EF0D0D"></Button>
             </LinearLayout>
         </LinearLayout>
