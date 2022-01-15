@@ -3,14 +3,34 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/drawable/bg1.xml" value="0.24722222222222223" />
+        <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/drawable/botron.xml" value="0.24722222222222223" />
+        <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/drawable/botron1.xml" value="0.24722222222222223" />
+        <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/drawable/shape.xml" value="0.24722222222222223" />
+        <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/layout/activity_caidat.xml" value="0.2427536231884058" />
         <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/layout/activity_canhan.xml" value="0.2427536231884058" />
         <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/layout/activity_capnhatthongtin.xml" value="0.12360688956433637" />
         <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/layout/activity_cb_uudai.xml" value="0.24010416666666667" />
+        <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/layout/activity_chitietthongbao.xml" value="0.2427536231884058" />
+        <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/layout/activity_chitietthongbao2.xml" value="0.2427536231884058" />
         <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/layout/activity_combo_nhom.xml" value="0.2427536231884058" />
+        <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/layout/activity_dangki.xml" value="0.2427536231884058" />
+        <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/layout/activity_dangnhap.xml" value="0.2427536231884058" />
+        <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/layout/activity_dkthanhcong.xml" value="0.2427536231884058" />
+        <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/layout/activity_doimatkhau.xml" value="0.2427536231884058" />
         <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/layout/activity_donhang.xml" value="0.2427536231884058" />
         <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/layout/activity_donhangpr.xml" value="0.2427536231884058" />
+        <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/layout/activity_finaldonhang.xml" value="0.2427536231884058" />
         <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/layout/activity_lichsu.xml" value="0.2427536231884058" />
+        <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/layout/activity_main.xml" value="0.2427536231884058" />
+        <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/layout/activity_second.xml" value="0.2427536231884058" />
+        <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/layout/activity_spinner_item.xml" value="0.2427536231884058" />
+        <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/layout/activity_start.xml" value="0.2427536231884058" />
+        <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/layout/activity_themdiachimoi.xml" value="0.2427536231884058" />
+        <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/layout/activity_third.xml" value="0.2427536231884058" />
+        <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/layout/activity_thongbao.xml" value="0.2427536231884058" />
         <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/layout/activity_thongtintaikhoan2.xml" value="0.2427536231884058" />
+        <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/layout/activity_toast.xml" value="0.2427536231884058" />
         <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/layout/activity_trangchu.xml" value="0.2427536231884058" />
         <entry key="..\:/New folder (2)/projectandroid/app/src/main/res/layout/custom_list.xml" value="0.2427536231884058" />
         <entry key="..\:/final1/app/src/main/res/drawable/footer.xml" value="0.2703125" />

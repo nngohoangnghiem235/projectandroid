@@ -63,9 +63,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/white"
+                        android:fontFamily="sans-serif"
                         android:gravity="bottom"
                         android:text="Nhận thông báo"
-                        android:fontFamily="sans-serif"
                         android:textColor="@color/black"
                         android:textSize="30sp" />
 

@@ -41,6 +41,7 @@
             android:backgroundTint="#ff0000"
             android:fontFamily="sans-serif"
             android:text="Huỷ"
+            android:background="@drawable/botron"
             android:textColor="@color/white">
 
         </Button>
@@ -56,6 +57,7 @@
                 android:backgroundTint="#ff0000"
                 android:fontFamily="sans-serif"
                 android:text="Xoá tất cả"
+                android:background="@drawable/botron"
                 android:textColor="@color/white"></Button>
         </RelativeLayout>
     </LinearLayout>
