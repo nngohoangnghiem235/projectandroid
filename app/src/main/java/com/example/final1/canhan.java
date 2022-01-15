@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -18,6 +20,7 @@ public class canhan extends AppCompatActivity {
     TextView txtcaidat, txtdangxuat;
     Button btnnhahag;
     Database database;
+    ImageView youtube;
     String ten;
 
     ArrayList<taikhoanuser> arrayuser;
@@ -37,8 +40,17 @@ public class canhan extends AppCompatActivity {
         txtcaidat = (TextView) findViewById(R.id.caidat);
         txtdangxuat=(TextView) findViewById(R.id.dangxuat);
         Tentoi =(TextView) findViewById(R.id.cn_toi);
+        youtube = (ImageView) findViewById(R.id.cn_youtube);
 
         Tentoi.setText(ten);
+
+        youtube.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.google.android.youtube");
+                startActivity( launchIntent );
+            }
+        });
 
         txtdangxuat.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,6 +87,7 @@ public class canhan extends AppCompatActivity {
                 startActivity(intentcaidat);
             }
         });
+
 
     }
 
