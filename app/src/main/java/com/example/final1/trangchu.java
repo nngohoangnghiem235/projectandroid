@@ -103,9 +103,9 @@ public class trangchu extends AppCompatActivity {
         list_piz = (ListView) findViewById(R.id.list_view);
         arraylispizza = new ArrayList<>();
 
-        arraylispizza.add(new listpizza("COMBO PIZZAHUB A 145.000đ","1 Pizza thập cẩm","1 Pizza thập cẩm",R.drawable.cb111));
-        arraylispizza.add(new listpizza("COMBO PIZZAHUB A 145.000đ","1 Pizza thập cẩm","1 Pizza thập cẩm",R.drawable.cb111));
-        arraylispizza.add(new listpizza("COMBO PIZZAHUB A 145.000đ","1 Pizza thập cẩm","1 Pizza thập cẩm",R.drawable.cb111));
+        arraylispizza.add(new listpizza("COMBO PIZZAHUB A 145.000đ","1 Pizza thập cẩm size L","1 Pizza bò phô mai + 1 pepsi",R.drawable.cb111));
+        arraylispizza.add(new listpizza("COMBO PIZZAHUB MIX 99.000đ","2 Pizza thập cẩm và phô mai","Khoai tây chiên + 1 coca",R.drawable.combo1));
+        arraylispizza.add(new listpizza("COMBO PIZZAHUB B 125.000đ","1 Mỳ ý tôm thịt","1 Pizza tự chọn",R.drawable.combo12));
         arraylispizza.add(new listpizza("COMBO PIZZAHUB A 145.000đ","1 Pizza thập cẩm","1 Pizza thập cẩm",R.drawable.cb111));
     }
 }
