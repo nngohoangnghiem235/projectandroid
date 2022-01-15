@@ -71,6 +71,7 @@ public class capnhatthongtin extends AppCompatActivity {
 //            database.QuerData("INSERT into thongtinuser2 (hoten,ngaythangnamsinh,email,gioitinh) VALUES('"+hoten+"','"+email+"','"+tuoi+"','"+gioitinh+"')");
            database.QuerData("UPDATE thongtinuser2 SET hoten ='"+hoten+"',ngaythangnamsinh = '"+tuoi+"',email = '"+email+"',gioitinh='"+gioitinh+"' where taikhoanuser = '"+dangnhap.tk+"'");
                 Toast.makeText(capnhatthongtin.this, "Chỉnh sửa thành công", Toast.LENGTH_SHORT).show();
+                finish();
 
             }
         });

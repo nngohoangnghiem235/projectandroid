@@ -51,7 +51,7 @@ public class doimatkhau extends AppCompatActivity {
             public void onClick(View view) {
                 String matkhau = xacnhanmk.getText().toString();
                 database.QuerData("UPDATE thongtinuser2 SET matkhau ='"+matkhau+"'where taikhoanuser = '"+dangnhap.tk+"'");
-                Toast.makeText(doimatkhau.this, "Chỉnh sửa thành công", Toast.LENGTH_SHORT).show();
+                Toast.makeText(doimatkhau.this, "Chỉnh sửa thành công", Toast.LENGTH_SHORT).show();finish();
 
             }
         });

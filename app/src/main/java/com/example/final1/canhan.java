@@ -3,6 +3,7 @@ package com.example.final1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.view.View;
@@ -13,9 +14,11 @@ import java.util.ArrayList;
 
 public class canhan extends AppCompatActivity {
     TextView txtthongtintaikhoan;
-    TextView txtdiachigiaohang;
+    TextView txtdiachigiaohang,Tentoi;
     TextView txtcaidat, txtdangxuat;
     Button btnnhahag;
+    Database database;
+    String ten;
 
     ArrayList<taikhoanuser> arrayuser;
     @Override
@@ -23,14 +26,19 @@ public class canhan extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_canhan);
-
+        database = new Database(this, "user.sqlite", null, 1);
+        Cursor datauser = database.GetData("select * from thongtinuser2 where taikhoanuser = '"+dangnhap.tk+"'");
+        while (datauser.moveToNext()) {
+            ten = datauser.getString(3);
 
         txtthongtintaikhoan = (TextView) findViewById(R.id.thongtintaikhoan);
         txtdiachigiaohang =(TextView) findViewById(R.id.diachigiaohang);
         btnnhahag=(Button)findViewById(R.id.nhahang);
         txtcaidat = (TextView) findViewById(R.id.caidat);
         txtdangxuat=(TextView) findViewById(R.id.dangxuat);
+        Tentoi =(TextView) findViewById(R.id.cn_toi);
 
+        Tentoi.setText(ten);
 
         txtdangxuat.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,4 +79,4 @@ public class canhan extends AppCompatActivity {
     }
 
 
-}
+}}

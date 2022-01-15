@@ -3,6 +3,7 @@ package com.example.final1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -11,9 +12,11 @@ public class thongtintaikhoan2 extends AppCompatActivity {
 
     TextView txtcapnhatthongtin;
     TextView txtdoimatkhau;
-    TextView txtdiachigiaohang;
+    TextView txtdiachigiaohang,Tentoi;
     TextView txtcaidat;
     TextView txtthongtintaikhoan, txtdangxuat;
+    String ten;
+    Database database;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +29,13 @@ public class thongtintaikhoan2 extends AppCompatActivity {
         txtcaidat = (TextView) findViewById(R.id.caidat);
         txtthongtintaikhoan = (TextView) findViewById(R.id.thongtintaikhoan);
         txtdangxuat=(TextView)findViewById(R.id.dangxuat);
+        Tentoi = (TextView)findViewById(R.id.cn_toi2);
 
+        database = new Database(this, "user.sqlite", null, 1);
+        Cursor datauser = database.GetData("select * from thongtinuser2 where taikhoanuser = '"+dangnhap.tk+"'");
+        while (datauser.moveToNext()) {
+            ten = datauser.getString(3);
+            Tentoi.setText(ten);
         txtdangxuat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,4 +78,4 @@ public class thongtintaikhoan2 extends AppCompatActivity {
             }
         });
     }
-}
+}}
