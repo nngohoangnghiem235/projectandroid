@@ -70,7 +70,7 @@ public class canhan extends AppCompatActivity {
             btndonhang.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intentnhahang1 = new Intent(canhan.this, donhang.class);
+                    Intent intentnhahang1 = new Intent(canhan.this, donhangpr.class);
                     startActivity(intentnhahang1);
                 }
             });
