@@ -89,7 +89,7 @@
         <entry key="..\:/projectandroid/app/src/main/res/layout/activity_chitietthongbao.xml" value="0.25" />
         <entry key="..\:/projectandroid/app/src/main/res/layout/activity_chitietthongbao2.xml" value="0.25" />
         <entry key="..\:/projectandroid/app/src/main/res/layout/activity_combo_nhom.xml" value="0.24635416666666668" />
-        <entry key="..\:/projectandroid/app/src/main/res/layout/activity_dangki.xml" value="0.25" />
+        <entry key="..\:/projectandroid/app/src/main/res/layout/activity_dangki.xml" value="0.4" />
         <entry key="..\:/projectandroid/app/src/main/res/layout/activity_dangnhap.xml" value="0.1793478260869565" />
         <entry key="..\:/projectandroid/app/src/main/res/layout/activity_dkthanhcong.xml" value="0.1793478260869565" />
         <entry key="..\:/projectandroid/app/src/main/res/layout/activity_doimatkhau.xml" value="0.1793478260869565" />
@@ -106,7 +106,8 @@
         <entry key="..\:/projectandroid/app/src/main/res/layout/activity_thongbao.xml" value="0.24635416666666668" />
         <entry key="..\:/projectandroid/app/src/main/res/layout/activity_thongtintaikhoan2.xml" value="0.25" />
         <entry key="..\:/projectandroid/app/src/main/res/layout/activity_toast.xml" value="0.24635416666666668" />
-        <entry key="..\:/projectandroid/app/src/main/res/layout/activity_trangchu.xml" value="0.1793478260869565" />
+        <entry key="..\:/projectandroid/app/src/main/res/layout/activity_trangchu.xml" value="0.264" />
+        <entry key="..\:/projectandroid/app/src/main/res/layout/san_pham.xml" value="0.25" />
       </map>
     </option>
   </component>

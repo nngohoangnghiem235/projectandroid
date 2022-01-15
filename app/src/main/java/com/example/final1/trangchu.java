@@ -36,7 +36,6 @@ public class trangchu extends AppCompatActivity {
         Cursor datauser = database.GetData("select * from thongtinuser2 where taikhoanuser = '"+dangnhap.tk+"'");
         while (datauser.moveToNext()) {
             Sten = datauser.getString(3);
-            Ssdt = datauser.getString(7);
             Stinhthanh = datauser.getString(8);
             Squanhuyen = datauser.getString(9);
             Sphuongxa = datauser.getString(10);
