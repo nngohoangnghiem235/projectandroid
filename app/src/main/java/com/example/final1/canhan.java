@@ -18,7 +18,7 @@ public class canhan extends AppCompatActivity {
     TextView txtthongtintaikhoan;
     TextView txtdiachigiaohang,Tentoi;
     TextView txtcaidat, txtdangxuat;
-    Button btnnhahag;
+    Button btnnhahag, btndonhang, btnnoti;
     Database database;
     ImageView youtube;
     String ten;
@@ -41,7 +41,8 @@ public class canhan extends AppCompatActivity {
         txtdangxuat=(TextView) findViewById(R.id.dangxuat);
         Tentoi =(TextView) findViewById(R.id.cn_toi);
         youtube = (ImageView) findViewById(R.id.cn_youtube);
-
+        btnnoti = (Button) findViewById(R.id.noti);
+        btndonhang = (Button) findViewById(R.id.dh);
         Tentoi.setText(ten);
 
         youtube.setOnClickListener(new View.OnClickListener() {
@@ -62,10 +63,24 @@ public class canhan extends AppCompatActivity {
         btnnhahag.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentnhahang = new Intent(canhan.this, trangchu.class);
-                startActivity(intentnhahang);
+                Intent intent = new Intent(canhan.this, trangchu.class);
+                startActivity(intent);
             }
         });
+            btndonhang.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intentnhahang1 = new Intent(canhan.this, donhang.class);
+                    startActivity(intentnhahang1);
+                }
+            });
+            btnnoti.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intentnhahang = new Intent(canhan.this, thongbao.class);
+                    startActivity(intentnhahang);
+                }
+            });
         txtthongtintaikhoan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -88,8 +103,5 @@ public class canhan extends AppCompatActivity {
             }
         });
 
-
     }
-
-
 }}

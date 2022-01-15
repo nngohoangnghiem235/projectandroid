@@ -208,14 +208,16 @@
                 android:drawableTop="@drawable/res"
                 ></Button>
             <Button
+                android:id="@+id/dh"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#fff"
                 android:text="Đơn hàng"
                 android:textColor="#000"
                 android:drawableTop="@drawable/donhang"></Button>
             <Button
+                android:id="@+id/noti"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#fff"

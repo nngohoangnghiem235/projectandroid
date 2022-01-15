@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class trangchu extends AppCompatActivity {
-        Button dath,dath1, taikhoan, tb, thayd, dhpr;
+        Button dath,dath1, taikhoan, tb, thayd, dhpr, combo2, combo3;
 
 
     @Override
@@ -24,8 +24,23 @@ public class trangchu extends AppCompatActivity {
 
         thayd = (Button) findViewById(R.id.thaydoi);
         dhpr = (Button) findViewById(R.id.dh);
+        combo2 = (Button)findViewById(R.id.cb2);
+        combo3 = (Button)findViewById(R.id.cb3);
 
-
+        combo2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentcb2 = new Intent(trangchu.this, combo_nhom.class);
+                startActivity(intentcb2);
+            }
+        });
+        combo3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentcb2 = new Intent(trangchu.this, cb_uudai.class);
+                startActivity(intentcb2);
+            }
+        });
         dhpr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

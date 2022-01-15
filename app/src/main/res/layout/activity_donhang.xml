@@ -477,60 +477,6 @@
                     android:background="@drawable/button"
                     android:backgroundTint="#EF0D0D"></Button>
             </LinearLayout>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                >
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="4"
-                    android:background="@drawable/footer"
-                    android:layout_alignParentBottom="true"
-                    >
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="#fff"
-                        android:drawableTop="@drawable/res"
-                        android:fontFamily="sans-serif"
-                        android:text="Nhà hàng"
-                        android:textColor="#000"></Button>
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="#fff"
-                        android:drawableTop="@drawable/resred"
-                        android:fontFamily="sans-serif"
-                        android:text="Đơn hàng"
-                        android:textColor="#EF0D0D"></Button>
-
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/tb"
-                        android:layout_weight="1"
-                        android:background="#fff"
-                        android:drawableTop="@drawable/noti"
-                        android:fontFamily="sans-serif"
-                        android:text="Thông báo"
-                        android:textColor="#000"></Button>
-
-
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="#fff"
-                        android:drawableTop="@drawable/us"
-                        android:fontFamily="sans-serif"
-                        android:text="Tài Khoản"
-                        android:textColor="#000"></Button>
-                </LinearLayout>
-            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
