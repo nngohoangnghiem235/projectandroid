@@ -8,117 +8,36 @@
 
 
     <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
         android:id="@+id/editTextTextPersonName2"
-        android:layout_width="288dp"
-        android:layout_height="22dp"
-        android:ems="10"
-        android:fontFamily="sans-serif"
-        android:inputType="textPersonName"
-        android:text="Tận hưởng là thành viên với các ưu đãi "
-        android:textColor="@color/black"
-        android:textSize="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.325"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.286" />
-
-    <EditText
-        android:id="@+id/dk_hoten"
-        android:layout_width="323dp"
-        android:layout_height="47dp"
-        android:background="@drawable/backg"
-        android:ems="10"
-        android:fontFamily="sans-serif"
-        android:hint="    Họ và tên*"
-        android:inputType="textPersonName"
-        android:textSize="14dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.465"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.375" />
-
-    <EditText
-        android:id="@+id/dk_sdt"
-        android:layout_width="323dp"
-        android:layout_height="47dp"
-        android:background="@drawable/backg"
-        android:ems="10"
-        android:fontFamily="sans-serif"
-        android:hint="    Số điện thoại*"
-        android:inputType="textPersonName"
-        android:textSize="14dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.465"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.467" />
-
-    <EditText
-        android:id="@+id/dk_tendn"
-        android:layout_width="323dp"
-        android:layout_height="47dp"
-        android:background="@drawable/backg"
-        android:ems="10"
-        android:fontFamily="sans-serif"
-        android:hint="    Tên đăng nhập*"
-        android:inputType="textPersonName"
-        android:textSize="14dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.465"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.561" />
-
-    <EditText
-        android:id="@+id/dk_mk"
-        android:layout_width="323dp"
-        android:layout_height="47dp"
-        android:background="@drawable/backg"
-        android:ems="10"
-        android:fontFamily="sans-serif"
-        android:hint="    Mật khẩu*"
-        android:inputType="textPersonName"
-        android:textSize="14dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.465"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.654" />
-
-
-    <Button
-        android:id="@+id/bntdangki"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/bnt"
+        android:ems="10"
+        android:singleLine="false"
+        android:lines="3"
         android:fontFamily="sans-serif"
-        android:text="Đăng kí"
+        android:inputType="textMultiLine"
+        android:text="Tận hưởng là thành viên với các ưu đãi "
         android:textColor="@color/black"
-        android:textSize="25sp"
+        android:textSize="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.86" />
+        app:layout_constraintVertical_bias="0.276" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.003"
         app:srcCompat="@drawable/anh1" />
 
     <ImageView
@@ -163,5 +82,95 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.155" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/dk_hoten"
+            android:layout_width="323dp"
+            android:layout_height="47dp"
+            android:background="@drawable/backg"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="    Họ và tên*"
+            android:inputType="textPersonName"
+            android:textSize="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.465"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.375" />
+
+        <EditText
+            android:id="@+id/dk_sdt"
+            android:layout_marginTop="10dp"
+            android:layout_width="323dp"
+            android:layout_height="47dp"
+            android:background="@drawable/backg"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="    Số điện thoại*"
+            android:inputType="textPersonName"
+            android:textSize="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.465"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.467" />
+
+        <EditText
+            android:id="@+id/dk_tendn"
+            android:layout_marginTop="10dp"
+            android:layout_width="323dp"
+            android:layout_height="47dp"
+            android:background="@drawable/backg"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="    Tên đăng nhập*"
+            android:inputType="textPersonName"
+            android:textSize="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.465"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.561" />
+
+        <EditText
+            android:id="@+id/dk_mk"
+            android:layout_marginTop="10dp"
+            android:layout_width="323dp"
+            android:layout_height="47dp"
+            android:background="@drawable/backg"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="    Mật khẩu*"
+            android:inputType="textPersonName"
+            android:textSize="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.465"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.654" />
+
+
+        <Button
+            android:id="@+id/bntdangki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bnt"
+            android:fontFamily="sans-serif"
+            android:text="Đăng kí"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.471"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.86" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
