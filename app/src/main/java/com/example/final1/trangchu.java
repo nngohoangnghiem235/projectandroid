@@ -13,7 +13,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class trangchu extends AppCompatActivity {
-        Button  taikhoan, tb, thayd, dhpr, combo2, combo3;
+        Button  taikhoan, tb, thayd, dhpr, combo2,combo3;
         TextView diachi;
         Database database;
     String Sten,Sphuongxa,Squanhuyen,Ssonha,Stinhthanh;
@@ -50,6 +50,7 @@ public class trangchu extends AppCompatActivity {
 
         }
         diachi.setText(Sten);
+
 
 
         combo2.setOnClickListener(new View.OnClickListener() {
